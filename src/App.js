@@ -1,4 +1,5 @@
-import './App.css';
+import './styles/App.css';
+import './styles/Header.css';
 import Header from './components/Header';
 
 function App() {
@@ -6,7 +7,6 @@ function App() {
     <>
     <Header />
     <div className="App">
-      <h2>Hello</h2>
     </div>
     </>
   );

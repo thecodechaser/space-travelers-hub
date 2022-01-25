@@ -20,8 +20,9 @@ export const fetchRocketApi = () => async (dispatch) => {
     const { id } = data[i];
     const { description } = data[i];
     const image = data[i].flickr_images[0];
+    const reserved = false;
     const object = {
-      id, name, description, image,
+      id, name, description, image, reserved
     };
     rockets.push(object);
   }

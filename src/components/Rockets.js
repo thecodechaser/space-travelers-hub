@@ -1,9 +1,36 @@
 import React from 'react';
 
-const Rockets = () => (
+const Rockets = () => {
+
+  const rockets = [
+    {
+      id: 0,
+      name: "name 1",
+      image: "https://imgur.com/DaCfMsj.jpg",
+      description: "details 1"
+    },
+    {
+      id: 1,
+      name: "name 2",
+      image: "https://imgur.com/DaCfMsj.jpg",
+      description: "details 2"
+    },
+    {
+      id: 2,
+      name: "name 3",
+      image: "https://imgur.com/DaCfMsj.jpg",
+      description: "details 3"
+    }
+  ]
+  return (
   <main>
-    <h1>Hello from Rockets</h1>
+    {
+      rockets.map(rocket=>(
+        
+      ))
+    }
   </main>
-);
+  );
+};
 
 export default Rockets;

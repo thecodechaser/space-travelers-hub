@@ -2,6 +2,12 @@
 
 .rocket-container {
   display: flex;
+  margin: 20px 50px;
+  gap: 20px;
+}
+
+.rocket-img {
+  width: 400px;
 }
 
 .rocket-details {

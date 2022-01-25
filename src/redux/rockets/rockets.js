@@ -13,7 +13,15 @@ const fetchRocket= (payload) => ({
 
 export const fetchRocketApi= () => async (dispatch) =>{
     const data = await Axios.get('https://api.spacexdata.com/v3/rockets');
-    const rockets = 
+    const rockets = [];
+    for(let i=0; i<data.length; i++){
+        const name = data[i].rocket_name;
+        const id = data[i].id;
+        const description = data[i].description;
+        const image = data[i].flickr_images[0];
+        const object = { id, name, description, image };
+        rockets.push(object);
+    }
     dispatch(fetchRocket(rockets));
 }
 

@@ -17,7 +17,11 @@ const initialState = [];
 
 // reducer
 const reducer = (state = initialState, action) => {
-   
+    switch(action.type){
+        case FETCH_ROCKET:
+            return action.payload;
+        default:
+          return state;
     }
 };
 

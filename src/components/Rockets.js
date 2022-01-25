@@ -4,6 +4,7 @@ import RocketItem from './rocketsComponent/RocketItem';
 import { fetchRocketApi } from '../redux/rockets/rockets';
 
 const Rockets = () => {
+  const rockets = useSelector((state) => state.rocketsReducer);
   
   return (
     <main>

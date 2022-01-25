@@ -27,7 +27,7 @@ const Rockets = () => {
   <main>
     {
       rockets.map(rocket=>(
-
+        <RocketItem rocket={rocket}/>
       ))
     }
   </main>

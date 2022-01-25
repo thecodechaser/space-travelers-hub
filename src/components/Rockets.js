@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import RocketItem from './rocketsComponent/RocketItem';
 import { fetchRocketApi } from '../redux/rockets/rockets';

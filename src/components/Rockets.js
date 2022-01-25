@@ -1,27 +1,10 @@
-import React from 'react';
+import React, { useEffect} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import RocketItem from './rocketsComponent/RocketItem';
+import { fetchRocketApi } from '../redux/rockets/rockets';
 
 const Rockets = () => {
-  const rockets = [
-    {
-      id: 0,
-      name: 'name 1',
-      image: 'https://imgur.com/DaCfMsj.jpg',
-      description: 'details 1',
-    },
-    {
-      id: 1,
-      name: 'name 2',
-      image: 'https://imgur.com/DaCfMsj.jpg',
-      description: 'details 2',
-    },
-    {
-      id: 2,
-      name: 'name 3',
-      image: 'https://imgur.com/DaCfMsj.jpg',
-      description: 'details 3',
-    },
-  ];
+  
   return (
     <main>
       {

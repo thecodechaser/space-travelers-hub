@@ -13,22 +13,24 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route 
-        path="/"
-        element={(
-          <Rockets />
-        )}>
-        </Route>
-        <Route 
-        path="/missions"
-        element={(
-          <Missions />
-        )}></Route>
-        <Route 
-        path="/myprofile"
-        element={(
-          <MyProfile />
-        )}></Route>
+        <Route
+          path="/"
+          element={(
+            <Rockets />
+        )}
+        />
+        <Route
+          path="/missions"
+          element={(
+            <Missions />
+        )}
+        />
+        <Route
+          path="/myprofile"
+          element={(
+            <MyProfile />
+        )}
+        />
       </Routes>
     </>
   );

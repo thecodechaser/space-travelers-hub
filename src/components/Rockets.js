@@ -1,4 +1,5 @@
 import React from 'react';
+import RocketItem from './rocketsComponent/RocketItem';
 
 const Rockets = () => {
 
@@ -26,7 +27,7 @@ const Rockets = () => {
   <main>
     {
       rockets.map(rocket=>(
-        
+
       ))
     }
   </main>

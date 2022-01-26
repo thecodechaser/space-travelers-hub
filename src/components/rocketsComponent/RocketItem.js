@@ -6,7 +6,7 @@ import { bookRocket } from '../../redux/rockets/rockets';
 const RocketItem = (props) => {
   const {
     rocket: {
-      id, name, image, description,
+      id, name, image, description, reserved
     },
   } = props;
   const dispatch = useDispatch();
@@ -31,6 +31,7 @@ RocketItem.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
+    reserved: PropTypes.bool,
   }).isRequired,
 };
 

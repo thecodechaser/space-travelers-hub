@@ -18,7 +18,7 @@ const RocketItem = (props) => {
       <img alt="rocket" src={image} className="rocket-img" />
       <div className="rocket-details">
         <h2 className="rocket-title">{name}</h2>
-        <p className="rocket-details">
+        <p className="rocket-description">
           {reserved && (
           <span>
             Reserved

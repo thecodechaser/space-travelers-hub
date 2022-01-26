@@ -1,1 +1,5 @@
 /* style for my-profile */
+
+.profile-main {
+    display: flex;
+}

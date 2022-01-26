@@ -2,7 +2,7 @@ import Axios from 'axios';
 
 // conts
 const FETCH_ROCKET = 'spaceTravelersHub/rockets/FETCH_ROCKET';
-const RESERVE_ROCKET ='spaceTravelersHub/rockets/RESERVE_ROCKET';
+const RESERVE_ROCKET = 'spaceTravelersHub/rockets/RESERVE_ROCKET';
 
 // actions
 const fetchRocket = (payload) => ({
@@ -43,7 +43,7 @@ const bookRocket = (state, payload) => {
     return { ...rocket, reserved: true };
   });
   return newState;
-}
+};
 
 // state
 const initialState = [];
@@ -53,8 +53,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKET:
       return action.payload;
-      case RESERVE_ROCKET:
-        return bookRocket(state, action.payload)
+    case RESERVE_ROCKET:
+      return bookRocket(state, action.payload);
     default:
       return state;
   }

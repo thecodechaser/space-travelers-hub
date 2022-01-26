@@ -4,12 +4,15 @@ import { useDispatch } from 'react-redux';
 import { reserveRocket } from '../../redux/rockets/rockets';
 
 const RocketItem = (props) => {
-  const { rocket: { id, name, image, description, reserved } } = props;
-  console.log(reserved);
+  const {
+    rocket: {
+      id, name, image, description,
+    },
+  } = props;
   const dispatch = useDispatch();
-  const reserveRocketH=()=>{
+  const reserveRocketH = () => {
     dispatch(reserveRocket(id));
-  }
+  };
   return (
     <div className="rocket-container">
       <img alt="rocket" src={image} className="rocket-img" />

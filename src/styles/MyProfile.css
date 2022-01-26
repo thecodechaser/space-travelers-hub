@@ -1,15 +1,15 @@
 /* style for my-profile */
 
 .profile-main {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 }
 
 .profile-rockets {
-    border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 .profile-res-rocket {
-    border: 1px solid #000;
-    margin: 0;
+  border: 1px solid #000;
+  margin: 0;
 }

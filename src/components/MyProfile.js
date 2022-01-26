@@ -1,8 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
+const rockets = useSelector((state) => state.rocketsReducer);
 
-  
   return (
   <main className="profile-main">
     <div className="profile-rockets">

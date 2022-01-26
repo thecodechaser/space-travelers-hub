@@ -7,6 +7,7 @@ const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
   <main className="profile-main">
+    <div>
       <h1>My Rockets</h1>
       <div className="profile-rockets">
         {
@@ -15,8 +16,10 @@ const reservedRockets = rockets.filter((rocket) => rocket.reserved);
           ))
         }
       </div>
-
+      </div>
+      <div>
       <h1>My Missions</h1>
+      </div>
   </main>
   );
 };

@@ -6,7 +6,7 @@ import { bookRocket } from '../../redux/rockets/rockets';
 const RocketItem = (props) => {
   const {
     rocket: {
-      id, name, image, description, reserved
+      id, name, image, description, reserved,
     },
   } = props;
   const dispatch = useDispatch();
@@ -19,13 +19,16 @@ const RocketItem = (props) => {
       <div className="rocket-details">
         <h2 className="rocket-title">{name}</h2>
         <p className="rocket-details">
-        {reserved && (
-            <span>
-              Reserved
-            </span>
-          )} {description}</p>
+          {reserved && (
+          <span>
+            Reserved
+          </span>
+          )}
+          {' '}
+          {description}
+        </p>
         {!reserved ? (
-        <button type="button" className="rocket-reserve-btn" onClick={reserveCancelRocket}>Reserve Rocket</button>
+          <button type="button" className="rocket-reserve-btn" onClick={reserveCancelRocket}>Reserve Rocket</button>
         ) : (
           <button type="button" className="rocket-cancel-btn" onClick={reserveCancelRocket}>Cancel Reserve</button>
         )}

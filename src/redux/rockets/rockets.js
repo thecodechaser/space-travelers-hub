@@ -38,7 +38,11 @@ export const fetchRocketApi = () => async (dispatch) => {
 // rocket-booking
 
 const bookRocket = (state, payload) => {
-
+  const newState = state.map((rocket) => {
+    if (rocket.id !== payload) return rocket;
+    return { ...rocket, reserved: true };
+  });
+  return newState;
 }
 
 // state

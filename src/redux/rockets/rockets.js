@@ -2,6 +2,7 @@ import Axios from 'axios';
 
 // conts
 const FETCH_ROCKET = 'spaceTravelersHub/rockets/FETCH_ROCKET';
+const RESERVE_ROCKET ='spaceTravelersHub/rockets/RESERVE_ROCKET';
 
 // actions
 const fetchRocket = (payload) => ({

@@ -37,11 +37,12 @@
   margin: 0 1rem;
 }
 
-.button {
+button {
   font-size: 1.3rem;
   background: transparent;
   border-radius: 5px;
-  min-width: 135px;
+  min-width: 150px;
+  line-height: 40px;
   border-color: #444a4f;
   color: #444a4f;
   cursor: pointer;
@@ -49,4 +50,18 @@
 
 .button:hover {
   background: #ddd;
+}
+
+.buttonLeave {
+  font-size: 1.3rem;
+  background: transparent;
+  border-radius: 5px;
+  min-width: 150px;
+  border-color: #df5052;
+  color: #df5052;
+  cursor: pointer;
+}
+
+.buttonLeave:hover {
+  background: #fdb9ba;
 }

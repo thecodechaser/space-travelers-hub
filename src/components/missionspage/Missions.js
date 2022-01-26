@@ -1,10 +1,15 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import MissionList from './missionList';
 import './Missions.css';
+import { getMissions } from '../../redux/missions/missions';
 
-const Missions = () => {
-  const missions = useSelector((state) => state.missions.missions);
+const MissionsPage = () => {
+  const missions = useSelector((state) => state.missionsReducer.missions);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMissions());
+  }, [dispatch]);
   return (
     <div className="mission__container">
       <table className="table">
@@ -18,7 +23,13 @@ const Missions = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <MissionList key={mission.id} name={mission.name} description={mission.description} />
+            <MissionList
+              key={mission.id}
+              id={mission.id}
+              name={mission.name}
+              description={mission.description}
+              reserved={mission.reserved}
+            />
           ))}
         </tbody>
       </table>
@@ -26,4 +37,4 @@ const Missions = () => {
   );
 };
 
-export default Missions;
+export default MissionsPage;

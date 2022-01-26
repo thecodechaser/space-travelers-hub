@@ -1,6 +1,9 @@
 import React from 'react';
 
-const MyProfile = () => (
+const MyProfile = () => {
+
+  
+  return (
   <main className="profile-main">
     <div className="profile-rockets">
       <h1>My Rockets</h1>
@@ -9,6 +12,7 @@ const MyProfile = () => (
       <h1>My Missions</h1>
     </div>
   </main>
-);
+  );
+};
 
 export default MyProfile;

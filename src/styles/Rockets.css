@@ -25,3 +25,14 @@
   cursor: pointer;
   padding: 10px;
 }
+
+.rocket-cancel-btn {
+  width: 150px;
+  background-color: red;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+}

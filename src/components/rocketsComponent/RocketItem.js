@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const RocketItem = (props) => {
-  const { rocket: { name, image, description } } = props;
+  const { rocket: { id, name, image, description } } = props;
   return (
     <div className="rocket-container">
       <img alt="rocket" src={image} className="rocket-img" />
@@ -17,6 +17,7 @@ const RocketItem = (props) => {
 
 RocketItem.propTypes = {
   rocket: PropTypes.shape({
+    id: PropTypes.number,
     image: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,

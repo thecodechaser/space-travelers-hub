@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
 const rockets = useSelector((state) => state.rocketsReducer);
+const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
   <main className="profile-main">

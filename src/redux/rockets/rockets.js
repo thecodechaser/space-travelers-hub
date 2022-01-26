@@ -10,6 +10,11 @@ const fetchRocket = (payload) => ({
   payload,
 });
 
+export const reserveRocket = (payload) => ({
+  type: RESERVE_ROCKET,
+  payload,
+});
+
 //   apis-functions
 
 export const fetchRocketApi = () => async (dispatch) => {

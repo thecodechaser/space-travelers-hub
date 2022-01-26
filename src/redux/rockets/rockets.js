@@ -15,7 +15,7 @@ export const reserveRocket = (payload) => ({
   payload,
 });
 
-//   apis-functions
+//   APIs-functions
 
 export const fetchRocketApi = () => async (dispatch) => {
   const returnValue = await Axios.get('https://api.spacexdata.com/v3/rockets');
@@ -35,6 +35,12 @@ export const fetchRocketApi = () => async (dispatch) => {
   dispatch(fetchRocket(rockets));
 };
 
+// rocket-booking
+
+const bookRocket = (state, payload) => {
+
+}
+
 // state
 const initialState = [];
 
@@ -43,6 +49,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ROCKET:
       return action.payload;
+      case RESERVE_ROCKET:
+        return bookRocket(state, action.payload)
     default:
       return state;
   }

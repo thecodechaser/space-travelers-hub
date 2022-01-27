@@ -1,0 +1,23 @@
+.mission__container {
+  margin-top: 20px;
+}
+
+.table {
+  width: 90%;
+  margin: 0 auto;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.column {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 10px;
+  padding-bottom: 1.8rem;
+}
+
+.head {
+  font-size: 1.3rem;
+  padding: 10px;
+}

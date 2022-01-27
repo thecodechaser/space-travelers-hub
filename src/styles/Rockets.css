@@ -1,0 +1,47 @@
+/* style for rockets */
+
+.rocket-container {
+  display: flex;
+  margin: 20px 80px;
+  gap: 20px;
+}
+
+.rocket-img {
+  width: 280px;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.rocket-badge {
+  background-color: rgb(37, 177, 187);
+  color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.rocket-reserve-btn {
+  width: 130px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+}
+
+.rocket-cancel-btn {
+  width: 130px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  height: 40px;
+}

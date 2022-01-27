@@ -1,0 +1,23 @@
+/* style for my-profile */
+
+.profile-main {
+  display: flex;
+  margin: 20px 80px;
+  gap: 20px;
+}
+
+.reserve-container {
+  border: 2px solid rgb(209, 209, 209);
+  width: 40vw;
+}
+
+.reserve-item {
+  border-bottom: 2px solid rgb(209, 209, 209);
+  font-weight: 100;
+  margin: 0;
+  padding: 20px 15px;
+}
+
+.reserve-item:nth-child(odd) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,51 @@
+/* style for header */
+
+.header {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(209, 209, 209);
+  margin: 0 30px;
+}
+
+.logo-title-c {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-top {
+  width: 80px;
+  height: 80px;
+}
+
+.header-title {
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0290ff;
+}
+
+.nav-item:hover {
+  color: #005ca3;
+}
+
+.nav-item:focus {
+  text-decoration: underline;
+  color: #005ca3;
+}
+
+.nav-menu li:last-child {
+  border-left: 2px solid #000;
+  padding-left: 15px;
+}

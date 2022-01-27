@@ -1,20 +1,20 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
-import Rockets from '../components/Rockets'
+import MyProfile from '../components/MyProfile'
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
 
-describe('Rockets tests', () => {
+describe('MyProfile tests', () => {
   test('should render', () => {
-    const rockets = render(
+    const myprofile = render(
         <Provider store={store}>
       <BrowserRouter>
-        <Rockets />
+        <MyProfile />
       </BrowserRouter>,
       </Provider>
     );
 
-    expect(rockets).toMatchSnapshot();
+    expect(myprofile).toMatchSnapshot();
   });
 });

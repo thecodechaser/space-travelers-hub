@@ -5,30 +5,33 @@ import logo from '../asset/logo.png';
 const Header = () => {
   const links = [
     {
-      text: 'rockets',
+      text: 'Rockets',
       path: '/',
       id: 0,
     },
     {
-      text: 'missions',
+      text: 'Missions',
       path: '/missions',
       id: 1,
     },
     {
-      text: 'myprofile',
+      text: 'My Profile',
       path: '/myprofile',
       id: 2,
     },
   ];
   return (
-    <header>
-      <img alt="logo-top" src={logo} className="logo-top" />
+    <header className="header">
+      <div className="logo-title-c">
+        <img alt="logo-top" src={logo} className="logo-top" />
+        <h3 className="header-title">Space Traveler&apos;s Hub</h3>
+      </div>
       <nav>
-        <ul>
+        <ul className="nav-menu">
           {
           links.map((link) => (
             <li key={link.id}>
-              <NavLink to={link.path}>{link.text}</NavLink>
+              <NavLink to={link.path} className="nav-item">{link.text}</NavLink>
             </li>
           ))
         }

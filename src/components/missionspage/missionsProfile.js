@@ -4,17 +4,15 @@ import { useSelector } from 'react-redux';
 const MissionProfile = () => {
   const missions = useSelector((state) => state.missionsReducer.missions);
   const missionsFiltered = missions.filter((mission) => mission.reserved === true);
-  const missionEmpty = missionsFiltered.length <= 0;
   return (
-    <div className="profile-rocket f-col j-center">
-      <h1 className="rocket-profile-header">My Missions</h1>
-      <article className="profile-rocket-cont">
-        { missionEmpty
-            && <p>NO MISSIONS JOINED</p>}
+    <div className="reserve-container-top">
+      <h1>My Missions</h1>
+      <div className="reserve-container">
+        { missionsFiltered.length === 0 && <p>No Reserved Missions</p>}
         {missionsFiltered.map((mission) => (
-          <p className="rocket-profile-name" key={mission.id}>{mission.name}</p>
+          <h3 key={mission.id} className="reserve-item">{mission.name}</h3>
         ))}
-      </article>
+      </div>
     </div>
   );
 };

@@ -8,7 +8,9 @@ const MissionsPage = () => {
   const missions = useSelector((state) => state.missionsReducer.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissions());
+    if (missions.length === 0) {
+      dispatch(getMissions());
+    }
   }, [dispatch]);
   return (
     <div className="mission__container">

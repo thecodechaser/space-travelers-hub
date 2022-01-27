@@ -6,11 +6,11 @@
 
 ## Screenshots:
 
-![screenshot](./src/images/Screenshot1.png)
+![screenshot](./src/asset/Screenshot1.png)
 
-![screenshot](./src/images/Screenshot2.png)
+![screenshot](./src/asset/Screenshot2.png)
 
-![screenshot](./src/images/Screenshot3.png)
+![screenshot](./src/asset/Screenshot3.png)
 
 ## Built With
 
@@ -24,7 +24,7 @@
 
 ## Online live link
 
-[Visit project online](https://thecodechaser.github.io/book-store/)
+[Visit project online](https://space-travelers-thecodechaser.netlify.app)
 
 ## Getting Started
 
@@ -40,21 +40,31 @@ To get a local copy up and running follow these simple example steps.
 - [Node](https://nodejs.org/en/download/)
 
 ### Using it Locally
-- Clone the project
-`git clone https://github.com/AmaduKamara/space-travelers`
 
-`cd space-travelers`
+- Clone the project
+
+```bash 
+git clone https://github.com/thecodechaser/space-travelers-hub
+
+cd space-travelers-hub
+```
 
 - Install dependencies
-`npm i `
-`or`
-`npm install`
 
+```bash
+npm i 
+or
+npm install
+```
 - To Start the development server
-`npm start`
+```bash
+npm start
+```
 
 - To test the project
-`npm run test`
+```bash
+npm run test
+```
 
 
 ## Visit And Open Files

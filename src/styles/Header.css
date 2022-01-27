@@ -1,11 +1,11 @@
 /* style for header */
 
 .header {
-  padding: 0 25px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid gray;
-  margin: 0 20px;
+  border-bottom: 2px solid rgb(209, 209, 209);
+  margin: 0 30px;
 }
 
 .logo-title-c {
@@ -27,6 +27,7 @@
   list-style-type: none;
   display: flex;
   gap: 20px;
+  margin-top: 25px;
 }
 
 .nav-item {

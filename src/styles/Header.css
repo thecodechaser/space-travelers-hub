@@ -26,7 +26,7 @@
 .nav-menu {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 15px;
   margin-top: 25px;
 }
 
@@ -45,3 +45,7 @@
   color: #005ca3;
 }
 
+.nav-menu li:last-child {
+  border-left: 2px solid #000;
+  padding-left: 15px;
+}

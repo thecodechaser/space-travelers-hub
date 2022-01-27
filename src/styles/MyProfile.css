@@ -2,18 +2,22 @@
 
 .profile-main {
   display: flex;
-  gap: 100px;
+  margin: 20px 80px;
+  gap: 20px;
 }
 
-.profile-rockets {
-  border: 1px solid #000;
+.reserve-container {
+  border: 2px solid rgb(209, 209, 209);
+  width: 40vw;
 }
 
-.profile-res-rocket {
-  border: 1px solid #000;
+.reserve-item {
+  border-bottom: 2px solid rgb(209, 209, 209);
+  font-weight: 100;
   margin: 0;
+  padding: 20px 15px;
 }
 
-.myProfile .profile-rocket {
-  margin-left: 20px;
+.reserve-item:nth-child(odd) {
+  background-color: #f2f2f2;
 }

@@ -1,3 +1,46 @@
-.logo-top {
-  width: 100px;
+/* style for header */
+
+.header {
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  margin: 0 20px;
 }
+
+.logo-title-c {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-top {
+  width: 80px;
+  height: 80px;
+}
+
+.header-title {
+  margin-top: 25px;
+  font-size: 30px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0290ff;
+}
+
+.nav-item:hover {
+  color: #005ca3;
+}
+
+.nav-item:focus {
+  text-decoration: underline;
+  color: #005ca3;
+}
+

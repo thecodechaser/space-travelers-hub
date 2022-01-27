@@ -1,16 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Rockets tests should render 1`] = `
+exports[`Missions tests should render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <main />
+      <div
+        class="mission__container"
+      >
+        <table
+          class="table"
+        >
+          <thead>
+            <tr
+              class="row"
+            >
+              <th
+                class="column head"
+              >
+                Mission
+              </th>
+              <th
+                class="column head"
+              >
+                Description
+              </th>
+              <th
+                class="column head"
+              >
+                Status
+              </th>
+              <th
+                class="column head"
+              >
+                 
+              </th>
+            </tr>
+          </thead>
+          <tbody />
+        </table>
+      </div>
       ,
     </div>
   </body>,
   "container": <div>
-    <main />
+    <div
+      class="mission__container"
+    >
+      <table
+        class="table"
+      >
+        <thead>
+          <tr
+            class="row"
+          >
+            <th
+              class="column head"
+            >
+              Mission
+            </th>
+            <th
+              class="column head"
+            >
+              Description
+            </th>
+            <th
+              class="column head"
+            >
+              Status
+            </th>
+            <th
+              class="column head"
+            >
+               
+            </th>
+          </tr>
+        </thead>
+        <tbody />
+      </table>
+    </div>
     ,
   </div>,
   "debug": [Function],

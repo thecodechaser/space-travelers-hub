@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import MissionList from './missionspage/MissionItem';
+import MissionItem from './missionsComponent/MissionItem';
 import { getMissions } from '../redux/missions/missions';
 
 const MissionsPage = () => {
@@ -24,7 +24,7 @@ const MissionsPage = () => {
         </thead>
         <tbody>
           {missions.map((mission) => (
-            <MissionList
+            <MissionItem
               key={mission.id}
               id={mission.id}
               name={mission.name}

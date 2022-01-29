@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MyProfile from './components/MyProfile';
 import Rockets from './components/Rockets';
-import Missions from './components/missionspage/Missions';
+import Missions from './components/Missions';
 
 function App() {
   return (

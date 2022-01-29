@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import MissionList from './missionList';
-import './Missions.css';
 import { getMissions } from '../../redux/missions/missions';
 
 const MissionsPage = () => {

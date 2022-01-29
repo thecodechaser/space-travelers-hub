@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo-title-c">
-        <img alt="logo-top" src={logo} className="logo-top" />
+        <a href="/"><img alt="logo-top" src={logo} className="logo-top" /></a>
         <h3 className="header-title">Space Traveler&apos;s Hub</h3>
       </div>
       <nav>

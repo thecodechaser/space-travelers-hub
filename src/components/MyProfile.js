@@ -1,5 +1,5 @@
 import React from 'react';
-import MissionProfile from './missionspage/missionsProfile';
+import MissionProfile from './missionsComponent/missionsProfile';
 import RocketProfile from './rocketsComponent/RocketProfile';
 
 const MyProfile = () => (

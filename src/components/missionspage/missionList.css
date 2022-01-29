@@ -3,10 +3,10 @@
 }
 
 .column {
+  padding-bottom: 1.8rem;
   border: 1px solid #ddd;
   text-align: left;
   padding: 10px;
-  padding-bottom: 1.8rem;
 }
 
 .name {

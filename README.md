@@ -24,7 +24,7 @@
 
 ## Online live link
 
-[Visit project online](https://space-travelers-thecodechaser.netlify.app)
+[Visit project online](https://space-travelers.thecodechaser.com)
 
 ## Getting Started
 
